@@ -1,0 +1,2568 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parse a comma-separated list of component values a comma 1`] = `
+Array [
+  Array [],
+  Array [],
+]
+`;
+
+exports[`parse a comma-separated list of component values a comma at the beginning 1`] = `
+Array [
+  Array [],
+  Array [
+    Object {
+      "type": "tIdent",
+      "value": "blue",
+    },
+  ],
+  Array [
+    Object {
+      "type": "tIdent",
+      "value": "red",
+    },
+  ],
+]
+`;
+
+exports[`parse a comma-separated list of component values a comma at the end 1`] = `
+Array [
+  Array [
+    Object {
+      "type": "tIdent",
+      "value": "blue",
+    },
+  ],
+  Array [
+    Object {
+      "type": "tIdent",
+      "value": "red",
+    },
+  ],
+  Array [],
+]
+`;
+
+exports[`parse a comma-separated list of component values extra value 1`] = `
+Array [
+  Array [
+    Object {
+      "type": "tIdent",
+      "value": "blue",
+    },
+    Object {
+      "type": "tWhitespace",
+    },
+    Object {
+      "type": "tIdent",
+      "value": "red",
+    },
+  ],
+]
+`;
+
+exports[`parse a comma-separated list of component values extra value with a comma 1`] = `
+Array [
+  Array [
+    Object {
+      "type": "tIdent",
+      "value": "blue",
+    },
+  ],
+  Array [
+    Object {
+      "type": "tIdent",
+      "value": "red",
+    },
+  ],
+]
+`;
+
+exports[`parse a comma-separated list of component values func value 1`] = `
+Array [
+  Array [
+    Object {
+      "name": "translate",
+      "type": "pFunction",
+      "value": Array [
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "subtype": "integer",
+          "type": "tPercentage",
+          "value": 50,
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+      ],
+    },
+  ],
+]
+`;
+
+exports[`parse a comma-separated list of component values ident value 1`] = `
+Array [
+  Array [
+    Object {
+      "type": "tIdent",
+      "value": "blue",
+    },
+  ],
+]
+`;
+
+exports[`parse a comma-separated list of component values multiple values 1`] = `
+Array [
+  Array [
+    Object {
+      "type": "tIdent",
+      "value": "blue",
+    },
+  ],
+  Array [
+    Object {
+      "type": "tWhitespace",
+    },
+    Object {
+      "type": "tUrl",
+      "value": "https://example.com/background",
+    },
+  ],
+  Array [
+    Object {
+      "type": "tWhitespace",
+    },
+    Object {
+      "type": "tString",
+      "value": "some text",
+    },
+  ],
+  Array [
+    Object {
+      "type": "tWhitespace",
+    },
+    Object {
+      "name": "translate",
+      "type": "pFunction",
+      "value": Array [
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "subtype": "integer",
+          "type": "tPercentage",
+          "value": 50,
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+      ],
+    },
+  ],
+]
+`;
+
+exports[`parse a comma-separated list of component values nothing 1`] = `
+Array [
+  Array [],
+]
+`;
+
+exports[`parse a comma-separated list of component values string value 1`] = `
+Array [
+  Array [
+    Object {
+      "type": "tString",
+      "value": "some text",
+    },
+  ],
+]
+`;
+
+exports[`parse a comma-separated list of component values url value 1`] = `
+Array [
+  Array [
+    Object {
+      "type": "tUrl",
+      "value": "https://example.com/background",
+    },
+  ],
+]
+`;
+
+exports[`parse a comma-separated list of component values whitespace 1`] = `
+Array [
+  Array [
+    Object {
+      "type": "tWhitespace",
+    },
+  ],
+]
+`;
+
+exports[`parse a component value func value 1`] = `
+Object {
+  "name": "translate",
+  "type": "pFunction",
+  "value": Array [
+    Object {
+      "type": "tWhitespace",
+    },
+    Object {
+      "subtype": "integer",
+      "type": "tPercentage",
+      "value": 50,
+    },
+    Object {
+      "type": "tWhitespace",
+    },
+  ],
+}
+`;
+
+exports[`parse a component value ident value 1`] = `
+Object {
+  "type": "tIdent",
+  "value": "blue",
+}
+`;
+
+exports[`parse a component value string value 1`] = `
+Object {
+  "type": "tString",
+  "value": "some text",
+}
+`;
+
+exports[`parse a component value url value 1`] = `
+Object {
+  "type": "tUrl",
+  "value": "https://example.com/background",
+}
+`;
+
+exports[`parse a declaration func declaration (important) 1`] = `
+Object {
+  "important": true,
+  "name": "transform",
+  "type": "pDeclaration",
+  "value": Array [
+    Object {
+      "name": "translate",
+      "type": "pFunction",
+      "value": Array [
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "subtype": "integer",
+          "type": "tPercentage",
+          "value": 50,
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+      ],
+    },
+  ],
+}
+`;
+
+exports[`parse a declaration func declaration 1`] = `
+Object {
+  "important": false,
+  "name": "transform",
+  "type": "pDeclaration",
+  "value": Array [
+    Object {
+      "name": "translate",
+      "type": "pFunction",
+      "value": Array [
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "subtype": "integer",
+          "type": "tPercentage",
+          "value": 50,
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+      ],
+    },
+  ],
+}
+`;
+
+exports[`parse a declaration ident declaration (important) 1`] = `
+Object {
+  "important": true,
+  "name": "color",
+  "type": "pDeclaration",
+  "value": Array [
+    Object {
+      "type": "tIdent",
+      "value": "blue",
+    },
+  ],
+}
+`;
+
+exports[`parse a declaration ident declaration 1`] = `
+Object {
+  "important": false,
+  "name": "color",
+  "type": "pDeclaration",
+  "value": Array [
+    Object {
+      "type": "tIdent",
+      "value": "blue",
+    },
+  ],
+}
+`;
+
+exports[`parse a declaration string declaration (important) 1`] = `
+Object {
+  "important": true,
+  "name": "content",
+  "type": "pDeclaration",
+  "value": Array [
+    Object {
+      "type": "tString",
+      "value": "some text",
+    },
+  ],
+}
+`;
+
+exports[`parse a declaration string declaration 1`] = `
+Object {
+  "important": false,
+  "name": "content",
+  "type": "pDeclaration",
+  "value": Array [
+    Object {
+      "type": "tString",
+      "value": "some text",
+    },
+  ],
+}
+`;
+
+exports[`parse a declaration url declaration (important) 1`] = `
+Object {
+  "important": true,
+  "name": "background-image",
+  "type": "pDeclaration",
+  "value": Array [
+    Object {
+      "type": "tUrl",
+      "value": "https://example.com/background",
+    },
+  ],
+}
+`;
+
+exports[`parse a declaration url declaration 1`] = `
+Object {
+  "important": false,
+  "name": "background-image",
+  "type": "pDeclaration",
+  "value": Array [
+    Object {
+      "type": "tUrl",
+      "value": "https://example.com/background",
+    },
+  ],
+}
+`;
+
+exports[`parse a list of component values a colon 1`] = `
+Array [
+  Object {
+    "type": "tColon",
+  },
+]
+`;
+
+exports[`parse a list of component values extra value 1`] = `
+Array [
+  Object {
+    "type": "tIdent",
+    "value": "blue",
+  },
+  Object {
+    "type": "tWhitespace",
+  },
+  Object {
+    "type": "tIdent",
+    "value": "red",
+  },
+]
+`;
+
+exports[`parse a list of component values func value 1`] = `
+Array [
+  Object {
+    "name": "translate",
+    "type": "pFunction",
+    "value": Array [
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "subtype": "integer",
+        "type": "tPercentage",
+        "value": 50,
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+    ],
+  },
+]
+`;
+
+exports[`parse a list of component values ident value 1`] = `
+Array [
+  Object {
+    "type": "tIdent",
+    "value": "blue",
+  },
+]
+`;
+
+exports[`parse a list of component values multiple values 1`] = `
+Array [
+  Object {
+    "type": "tIdent",
+    "value": "blue",
+  },
+  Object {
+    "type": "tWhitespace",
+  },
+  Object {
+    "type": "tUrl",
+    "value": "https://example.com/background",
+  },
+  Object {
+    "type": "tWhitespace",
+  },
+  Object {
+    "type": "tString",
+    "value": "some text",
+  },
+  Object {
+    "type": "tWhitespace",
+  },
+  Object {
+    "name": "translate",
+    "type": "pFunction",
+    "value": Array [
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "subtype": "integer",
+        "type": "tPercentage",
+        "value": 50,
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+    ],
+  },
+]
+`;
+
+exports[`parse a list of component values nothing 1`] = `Array []`;
+
+exports[`parse a list of component values string value 1`] = `
+Array [
+  Object {
+    "type": "tString",
+    "value": "some text",
+  },
+]
+`;
+
+exports[`parse a list of component values url value 1`] = `
+Array [
+  Object {
+    "type": "tUrl",
+    "value": "https://example.com/background",
+  },
+]
+`;
+
+exports[`parse a list of component values whitespace 1`] = `
+Array [
+  Object {
+    "type": "tWhitespace",
+  },
+]
+`;
+
+exports[`parse a list of declarations a block 1`] = `Array []`;
+
+exports[`parse a list of declarations a declaration with a semicolon 1`] = `
+Array [
+  Object {
+    "important": false,
+    "name": "a",
+    "type": "pDeclaration",
+    "value": Array [
+      Object {
+        "subtype": "(",
+        "type": "pBlock",
+        "value": Array [
+          Object {
+            "type": "tSemicolon",
+          },
+        ],
+      },
+    ],
+  },
+]
+`;
+
+exports[`parse a list of declarations a declaration with an error 1`] = `Array []`;
+
+exports[`parse a list of declarations a hash token 1`] = `Array []`;
+
+exports[`parse a list of declarations a hash token and a declaration 1`] = `
+Array [
+  Object {
+    "important": false,
+    "name": "border",
+    "type": "pDeclaration",
+    "value": Array [
+      Object {
+        "type": "tIdent",
+        "value": "none",
+      },
+    ],
+  },
+]
+`;
+
+exports[`parse a list of declarations a single declaration 1`] = `
+Array [
+  Object {
+    "important": false,
+    "name": "color",
+    "type": "pDeclaration",
+    "value": Array [
+      Object {
+        "type": "tIdent",
+        "value": "blue",
+      },
+    ],
+  },
+]
+`;
+
+exports[`parse a list of declarations a single declaration preceeded by a semicolon and whitespace 1`] = `
+Array [
+  Object {
+    "important": false,
+    "name": "color",
+    "type": "pDeclaration",
+    "value": Array [
+      Object {
+        "type": "tIdent",
+        "value": "blue",
+      },
+    ],
+  },
+]
+`;
+
+exports[`parse a list of declarations a single declaration succeeded by a semicolon and whitespace 1`] = `
+Array [
+  Object {
+    "important": false,
+    "name": "color",
+    "type": "pDeclaration",
+    "value": Array [
+      Object {
+        "type": "tIdent",
+        "value": "blue",
+      },
+    ],
+  },
+]
+`;
+
+exports[`parse a list of declarations an unclosed block 1`] = `Array []`;
+
+exports[`parse a list of declarations an unfinished declaration with a semicolon 1`] = `
+Array [
+  Object {
+    "important": false,
+    "name": "a",
+    "type": "pDeclaration",
+    "value": Array [
+      Object {
+        "subtype": "(",
+        "type": "pBlock",
+        "value": Array [
+          Object {
+            "type": "tSemicolon",
+          },
+        ],
+      },
+    ],
+  },
+]
+`;
+
+exports[`parse a list of declarations just a semicolon 1`] = `Array []`;
+
+exports[`parse a list of declarations multiple declarations 1`] = `
+Array [
+  Object {
+    "important": false,
+    "name": "color",
+    "type": "pDeclaration",
+    "value": Array [
+      Object {
+        "type": "tIdent",
+        "value": "blue",
+      },
+    ],
+  },
+  Object {
+    "important": false,
+    "name": "background-image",
+    "type": "pDeclaration",
+    "value": Array [
+      Object {
+        "type": "tUrl",
+        "value": "https://example.com/background",
+      },
+    ],
+  },
+  Object {
+    "important": false,
+    "name": "content",
+    "type": "pDeclaration",
+    "value": Array [
+      Object {
+        "type": "tString",
+        "value": "some text",
+      },
+    ],
+  },
+  Object {
+    "important": false,
+    "name": "transform",
+    "type": "pDeclaration",
+    "value": Array [
+      Object {
+        "name": "translate",
+        "type": "pFunction",
+        "value": Array [
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "subtype": "integer",
+            "type": "tPercentage",
+            "value": 50,
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+        ],
+      },
+    ],
+  },
+]
+`;
+
+exports[`parse a list of declarations multiple declarations and a declaration with an error 1`] = `
+Array [
+  Object {
+    "important": false,
+    "name": "color",
+    "type": "pDeclaration",
+    "value": Array [
+      Object {
+        "type": "tIdent",
+        "value": "blue",
+      },
+    ],
+  },
+  Object {
+    "important": false,
+    "name": "background-image",
+    "type": "pDeclaration",
+    "value": Array [
+      Object {
+        "type": "tUrl",
+        "value": "https://example.com/background",
+      },
+    ],
+  },
+  Object {
+    "important": false,
+    "name": "content",
+    "type": "pDeclaration",
+    "value": Array [
+      Object {
+        "type": "tString",
+        "value": "some text",
+      },
+    ],
+  },
+  Object {
+    "important": false,
+    "name": "transform",
+    "type": "pDeclaration",
+    "value": Array [
+      Object {
+        "name": "translate",
+        "type": "pFunction",
+        "value": Array [
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "subtype": "integer",
+            "type": "tPercentage",
+            "value": 50,
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+        ],
+      },
+    ],
+  },
+]
+`;
+
+exports[`parse a list of declarations nothing 1`] = `Array []`;
+
+exports[`parse a list of declarations whitespace 1`] = `Array []`;
+
+exports[`parse a list of rules cdo and cdc 1`] = `Array []`;
+
+exports[`parse a list of rules cdo and cdc in between rules 1`] = `
+Array [
+  Object {
+    "name": "import",
+    "prelude": Array [
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tString",
+        "value": "my-styles.css",
+      },
+    ],
+    "type": "pAtRule",
+    "value": null,
+  },
+  Object {
+    "prelude": Array [
+      Object {
+        "type": "tCdo",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "whatever",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tCdc",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "p",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tDelim",
+        "value": ">",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "a",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+    ],
+    "type": "pQualifiedRule",
+    "value": Object {
+      "subtype": "{",
+      "type": "pBlock",
+      "value": Array [
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "color",
+        },
+        Object {
+          "type": "tColon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "blue",
+        },
+        Object {
+          "type": "tSemicolon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+      ],
+    },
+  },
+]
+`;
+
+exports[`parse a list of rules import rule 1`] = `
+Array [
+  Object {
+    "name": "import",
+    "prelude": Array [
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tString",
+        "value": "my-styles.css",
+      },
+    ],
+    "type": "pAtRule",
+    "value": null,
+  },
+]
+`;
+
+exports[`parse a list of rules media rule 1`] = `
+Array [
+  Object {
+    "name": "media",
+    "prelude": Array [
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "print",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+    ],
+    "type": "pAtRule",
+    "value": Object {
+      "subtype": "{",
+      "type": "pBlock",
+      "value": Array [
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "body",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "subtype": "{",
+          "type": "pBlock",
+          "value": Array [
+            Object {
+              "type": "tWhitespace",
+            },
+            Object {
+              "type": "tIdent",
+              "value": "color",
+            },
+            Object {
+              "type": "tColon",
+            },
+            Object {
+              "type": "tWhitespace",
+            },
+            Object {
+              "type": "tIdent",
+              "value": "blue",
+            },
+            Object {
+              "type": "tSemicolon",
+            },
+            Object {
+              "type": "tWhitespace",
+            },
+            Object {
+              "type": "tIdent",
+              "value": "background-image",
+            },
+            Object {
+              "type": "tColon",
+            },
+            Object {
+              "type": "tWhitespace",
+            },
+            Object {
+              "type": "tUrl",
+              "value": "https://example.com/background",
+            },
+            Object {
+              "type": "tSemicolon",
+            },
+            Object {
+              "type": "tWhitespace",
+            },
+            Object {
+              "type": "tIdent",
+              "value": "content",
+            },
+            Object {
+              "type": "tColon",
+            },
+            Object {
+              "type": "tWhitespace",
+            },
+            Object {
+              "type": "tString",
+              "value": "some text",
+            },
+            Object {
+              "type": "tSemicolon",
+            },
+            Object {
+              "type": "tWhitespace",
+            },
+            Object {
+              "type": "tIdent",
+              "value": "transform",
+            },
+            Object {
+              "type": "tColon",
+            },
+            Object {
+              "type": "tWhitespace",
+            },
+            Object {
+              "name": "translate",
+              "type": "pFunction",
+              "value": Array [
+                Object {
+                  "type": "tWhitespace",
+                },
+                Object {
+                  "subtype": "integer",
+                  "type": "tPercentage",
+                  "value": 50,
+                },
+                Object {
+                  "type": "tWhitespace",
+                },
+              ],
+            },
+            Object {
+              "type": "tSemicolon",
+            },
+            Object {
+              "type": "tWhitespace",
+            },
+          ],
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+      ],
+    },
+  },
+]
+`;
+
+exports[`parse a list of rules nothing 1`] = `Array []`;
+
+exports[`parse a list of rules page rule 1`] = `
+Array [
+  Object {
+    "name": "page",
+    "prelude": Array [
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tColon",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "left",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+    ],
+    "type": "pAtRule",
+    "value": Object {
+      "subtype": "{",
+      "type": "pBlock",
+      "value": Array [
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "color",
+        },
+        Object {
+          "type": "tColon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "blue",
+        },
+        Object {
+          "type": "tSemicolon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "background-image",
+        },
+        Object {
+          "type": "tColon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tUrl",
+          "value": "https://example.com/background",
+        },
+        Object {
+          "type": "tSemicolon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "content",
+        },
+        Object {
+          "type": "tColon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tString",
+          "value": "some text",
+        },
+        Object {
+          "type": "tSemicolon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "transform",
+        },
+        Object {
+          "type": "tColon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "name": "translate",
+          "type": "pFunction",
+          "value": Array [
+            Object {
+              "type": "tWhitespace",
+            },
+            Object {
+              "subtype": "integer",
+              "type": "tPercentage",
+              "value": 50,
+            },
+            Object {
+              "type": "tWhitespace",
+            },
+          ],
+        },
+        Object {
+          "type": "tSemicolon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+      ],
+    },
+  },
+]
+`;
+
+exports[`parse a list of rules qualified rule 1`] = `
+Array [
+  Object {
+    "prelude": Array [
+      Object {
+        "type": "tIdent",
+        "value": "p",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tDelim",
+        "value": ">",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "a",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+    ],
+    "type": "pQualifiedRule",
+    "value": Object {
+      "subtype": "{",
+      "type": "pBlock",
+      "value": Array [
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "color",
+        },
+        Object {
+          "type": "tColon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "blue",
+        },
+        Object {
+          "type": "tSemicolon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "background-image",
+        },
+        Object {
+          "type": "tColon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tUrl",
+          "value": "https://example.com/background",
+        },
+        Object {
+          "type": "tSemicolon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "content",
+        },
+        Object {
+          "type": "tColon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tString",
+          "value": "some text",
+        },
+        Object {
+          "type": "tSemicolon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "transform",
+        },
+        Object {
+          "type": "tColon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "name": "translate",
+          "type": "pFunction",
+          "value": Array [
+            Object {
+              "type": "tWhitespace",
+            },
+            Object {
+              "subtype": "integer",
+              "type": "tPercentage",
+              "value": 50,
+            },
+            Object {
+              "type": "tWhitespace",
+            },
+          ],
+        },
+        Object {
+          "type": "tSemicolon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+      ],
+    },
+  },
+]
+`;
+
+exports[`parse a list of rules two at-rules 1`] = `
+Array [
+  Object {
+    "name": "import",
+    "prelude": Array [
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tString",
+        "value": "my-styles.css",
+      },
+    ],
+    "type": "pAtRule",
+    "value": null,
+  },
+  Object {
+    "name": "import",
+    "prelude": Array [
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tString",
+        "value": "my-styles.css",
+      },
+    ],
+    "type": "pAtRule",
+    "value": null,
+  },
+]
+`;
+
+exports[`parse a list of rules two qualified rules 1`] = `
+Array [
+  Object {
+    "prelude": Array [
+      Object {
+        "type": "tIdent",
+        "value": "p",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tDelim",
+        "value": ">",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "a",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+    ],
+    "type": "pQualifiedRule",
+    "value": Object {
+      "subtype": "{",
+      "type": "pBlock",
+      "value": Array [
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "color",
+        },
+        Object {
+          "type": "tColon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "blue",
+        },
+        Object {
+          "type": "tSemicolon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+      ],
+    },
+  },
+  Object {
+    "prelude": Array [
+      Object {
+        "type": "tIdent",
+        "value": "p",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tDelim",
+        "value": ">",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "a",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+    ],
+    "type": "pQualifiedRule",
+    "value": Object {
+      "subtype": "{",
+      "type": "pBlock",
+      "value": Array [
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "color",
+        },
+        Object {
+          "type": "tColon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "blue",
+        },
+        Object {
+          "type": "tSemicolon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+      ],
+    },
+  },
+]
+`;
+
+exports[`parse a list of rules whitespace 1`] = `Array []`;
+
+exports[`parse a rule confusing collision 1`] = `
+Object {
+  "prelude": Array [
+    Object {
+      "type": "tIdent",
+      "value": "u",
+    },
+    Object {
+      "type": "tDelim",
+      "value": "+",
+    },
+    Object {
+      "type": "tIdent",
+      "value": "a",
+    },
+  ],
+  "type": "pQualifiedRule",
+  "value": Object {
+    "subtype": "{",
+    "type": "pBlock",
+    "value": Array [
+      Object {
+        "type": "tIdent",
+        "value": "color",
+      },
+      Object {
+        "type": "tColon",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "green",
+      },
+      Object {
+        "type": "tSemicolon",
+      },
+    ],
+  },
+}
+`;
+
+exports[`parse a rule import rule 1`] = `
+Object {
+  "name": "import",
+  "prelude": Array [
+    Object {
+      "type": "tWhitespace",
+    },
+    Object {
+      "type": "tString",
+      "value": "my-styles.css",
+    },
+  ],
+  "type": "pAtRule",
+  "value": null,
+}
+`;
+
+exports[`parse a rule media rule 1`] = `
+Object {
+  "name": "media",
+  "prelude": Array [
+    Object {
+      "type": "tWhitespace",
+    },
+    Object {
+      "type": "tIdent",
+      "value": "print",
+    },
+    Object {
+      "type": "tWhitespace",
+    },
+  ],
+  "type": "pAtRule",
+  "value": Object {
+    "subtype": "{",
+    "type": "pBlock",
+    "value": Array [
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "body",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "subtype": "{",
+        "type": "pBlock",
+        "value": Array [
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "color",
+          },
+          Object {
+            "type": "tColon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "blue",
+          },
+          Object {
+            "type": "tSemicolon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "background-image",
+          },
+          Object {
+            "type": "tColon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tUrl",
+            "value": "https://example.com/background",
+          },
+          Object {
+            "type": "tSemicolon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "content",
+          },
+          Object {
+            "type": "tColon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tString",
+            "value": "some text",
+          },
+          Object {
+            "type": "tSemicolon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "transform",
+          },
+          Object {
+            "type": "tColon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "name": "translate",
+            "type": "pFunction",
+            "value": Array [
+              Object {
+                "type": "tWhitespace",
+              },
+              Object {
+                "subtype": "integer",
+                "type": "tPercentage",
+                "value": 50,
+              },
+              Object {
+                "type": "tWhitespace",
+              },
+            ],
+          },
+          Object {
+            "type": "tSemicolon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+        ],
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+    ],
+  },
+}
+`;
+
+exports[`parse a rule page rule 1`] = `
+Object {
+  "name": "page",
+  "prelude": Array [
+    Object {
+      "type": "tWhitespace",
+    },
+    Object {
+      "type": "tColon",
+    },
+    Object {
+      "type": "tIdent",
+      "value": "left",
+    },
+    Object {
+      "type": "tWhitespace",
+    },
+  ],
+  "type": "pAtRule",
+  "value": Object {
+    "subtype": "{",
+    "type": "pBlock",
+    "value": Array [
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "color",
+      },
+      Object {
+        "type": "tColon",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "blue",
+      },
+      Object {
+        "type": "tSemicolon",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "background-image",
+      },
+      Object {
+        "type": "tColon",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tUrl",
+        "value": "https://example.com/background",
+      },
+      Object {
+        "type": "tSemicolon",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "content",
+      },
+      Object {
+        "type": "tColon",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tString",
+        "value": "some text",
+      },
+      Object {
+        "type": "tSemicolon",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "transform",
+      },
+      Object {
+        "type": "tColon",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "name": "translate",
+        "type": "pFunction",
+        "value": Array [
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "subtype": "integer",
+            "type": "tPercentage",
+            "value": 50,
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+        ],
+      },
+      Object {
+        "type": "tSemicolon",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+    ],
+  },
+}
+`;
+
+exports[`parse a rule qualified rule 1`] = `
+Object {
+  "prelude": Array [
+    Object {
+      "type": "tIdent",
+      "value": "p",
+    },
+    Object {
+      "type": "tWhitespace",
+    },
+    Object {
+      "type": "tDelim",
+      "value": ">",
+    },
+    Object {
+      "type": "tWhitespace",
+    },
+    Object {
+      "type": "tIdent",
+      "value": "a",
+    },
+    Object {
+      "type": "tWhitespace",
+    },
+  ],
+  "type": "pQualifiedRule",
+  "value": Object {
+    "subtype": "{",
+    "type": "pBlock",
+    "value": Array [
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "color",
+      },
+      Object {
+        "type": "tColon",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "blue",
+      },
+      Object {
+        "type": "tSemicolon",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "background-image",
+      },
+      Object {
+        "type": "tColon",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tUrl",
+        "value": "https://example.com/background",
+      },
+      Object {
+        "type": "tSemicolon",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "content",
+      },
+      Object {
+        "type": "tColon",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tString",
+        "value": "some text",
+      },
+      Object {
+        "type": "tSemicolon",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "type": "tIdent",
+        "value": "transform",
+      },
+      Object {
+        "type": "tColon",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "name": "translate",
+        "type": "pFunction",
+        "value": Array [
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "subtype": "integer",
+            "type": "tPercentage",
+            "value": 50,
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+        ],
+      },
+      Object {
+        "type": "tSemicolon",
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+    ],
+  },
+}
+`;
+
+exports[`parse a stylesheet cdo and cdc 1`] = `
+Object {
+  "type": "pStylesheet",
+  "value": Array [],
+}
+`;
+
+exports[`parse a stylesheet cdo and cdc in between rules 1`] = `
+Object {
+  "type": "pStylesheet",
+  "value": Array [
+    Object {
+      "name": "import",
+      "prelude": Array [
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tString",
+          "value": "my-styles.css",
+        },
+      ],
+      "type": "pAtRule",
+      "value": null,
+    },
+    Object {
+      "prelude": Array [
+        Object {
+          "type": "tIdent",
+          "value": "whatever",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tCdc",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "p",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tDelim",
+          "value": ">",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "a",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+      ],
+      "type": "pQualifiedRule",
+      "value": Object {
+        "subtype": "{",
+        "type": "pBlock",
+        "value": Array [
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "color",
+          },
+          Object {
+            "type": "tColon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "blue",
+          },
+          Object {
+            "type": "tSemicolon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+        ],
+      },
+    },
+  ],
+}
+`;
+
+exports[`parse a stylesheet import rule 1`] = `
+Object {
+  "type": "pStylesheet",
+  "value": Array [
+    Object {
+      "name": "import",
+      "prelude": Array [
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tString",
+          "value": "my-styles.css",
+        },
+      ],
+      "type": "pAtRule",
+      "value": null,
+    },
+  ],
+}
+`;
+
+exports[`parse a stylesheet media rule 1`] = `
+Object {
+  "type": "pStylesheet",
+  "value": Array [
+    Object {
+      "name": "media",
+      "prelude": Array [
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "print",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+      ],
+      "type": "pAtRule",
+      "value": Object {
+        "subtype": "{",
+        "type": "pBlock",
+        "value": Array [
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "body",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "subtype": "{",
+            "type": "pBlock",
+            "value": Array [
+              Object {
+                "type": "tWhitespace",
+              },
+              Object {
+                "type": "tIdent",
+                "value": "color",
+              },
+              Object {
+                "type": "tColon",
+              },
+              Object {
+                "type": "tWhitespace",
+              },
+              Object {
+                "type": "tIdent",
+                "value": "blue",
+              },
+              Object {
+                "type": "tSemicolon",
+              },
+              Object {
+                "type": "tWhitespace",
+              },
+              Object {
+                "type": "tIdent",
+                "value": "background-image",
+              },
+              Object {
+                "type": "tColon",
+              },
+              Object {
+                "type": "tWhitespace",
+              },
+              Object {
+                "type": "tUrl",
+                "value": "https://example.com/background",
+              },
+              Object {
+                "type": "tSemicolon",
+              },
+              Object {
+                "type": "tWhitespace",
+              },
+              Object {
+                "type": "tIdent",
+                "value": "content",
+              },
+              Object {
+                "type": "tColon",
+              },
+              Object {
+                "type": "tWhitespace",
+              },
+              Object {
+                "type": "tString",
+                "value": "some text",
+              },
+              Object {
+                "type": "tSemicolon",
+              },
+              Object {
+                "type": "tWhitespace",
+              },
+              Object {
+                "type": "tIdent",
+                "value": "transform",
+              },
+              Object {
+                "type": "tColon",
+              },
+              Object {
+                "type": "tWhitespace",
+              },
+              Object {
+                "name": "translate",
+                "type": "pFunction",
+                "value": Array [
+                  Object {
+                    "type": "tWhitespace",
+                  },
+                  Object {
+                    "subtype": "integer",
+                    "type": "tPercentage",
+                    "value": 50,
+                  },
+                  Object {
+                    "type": "tWhitespace",
+                  },
+                ],
+              },
+              Object {
+                "type": "tSemicolon",
+              },
+              Object {
+                "type": "tWhitespace",
+              },
+            ],
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+        ],
+      },
+    },
+  ],
+}
+`;
+
+exports[`parse a stylesheet nothing 1`] = `
+Object {
+  "type": "pStylesheet",
+  "value": Array [],
+}
+`;
+
+exports[`parse a stylesheet page rule 1`] = `
+Object {
+  "type": "pStylesheet",
+  "value": Array [
+    Object {
+      "name": "page",
+      "prelude": Array [
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tColon",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "left",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+      ],
+      "type": "pAtRule",
+      "value": Object {
+        "subtype": "{",
+        "type": "pBlock",
+        "value": Array [
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "color",
+          },
+          Object {
+            "type": "tColon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "blue",
+          },
+          Object {
+            "type": "tSemicolon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "background-image",
+          },
+          Object {
+            "type": "tColon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tUrl",
+            "value": "https://example.com/background",
+          },
+          Object {
+            "type": "tSemicolon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "content",
+          },
+          Object {
+            "type": "tColon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tString",
+            "value": "some text",
+          },
+          Object {
+            "type": "tSemicolon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "transform",
+          },
+          Object {
+            "type": "tColon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "name": "translate",
+            "type": "pFunction",
+            "value": Array [
+              Object {
+                "type": "tWhitespace",
+              },
+              Object {
+                "subtype": "integer",
+                "type": "tPercentage",
+                "value": 50,
+              },
+              Object {
+                "type": "tWhitespace",
+              },
+            ],
+          },
+          Object {
+            "type": "tSemicolon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+        ],
+      },
+    },
+  ],
+}
+`;
+
+exports[`parse a stylesheet qualified rule 1`] = `
+Object {
+  "type": "pStylesheet",
+  "value": Array [
+    Object {
+      "prelude": Array [
+        Object {
+          "type": "tIdent",
+          "value": "p",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tDelim",
+          "value": ">",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "a",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+      ],
+      "type": "pQualifiedRule",
+      "value": Object {
+        "subtype": "{",
+        "type": "pBlock",
+        "value": Array [
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "color",
+          },
+          Object {
+            "type": "tColon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "blue",
+          },
+          Object {
+            "type": "tSemicolon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "background-image",
+          },
+          Object {
+            "type": "tColon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tUrl",
+            "value": "https://example.com/background",
+          },
+          Object {
+            "type": "tSemicolon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "content",
+          },
+          Object {
+            "type": "tColon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tString",
+            "value": "some text",
+          },
+          Object {
+            "type": "tSemicolon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "transform",
+          },
+          Object {
+            "type": "tColon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "name": "translate",
+            "type": "pFunction",
+            "value": Array [
+              Object {
+                "type": "tWhitespace",
+              },
+              Object {
+                "subtype": "integer",
+                "type": "tPercentage",
+                "value": 50,
+              },
+              Object {
+                "type": "tWhitespace",
+              },
+            ],
+          },
+          Object {
+            "type": "tSemicolon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+        ],
+      },
+    },
+  ],
+}
+`;
+
+exports[`parse a stylesheet two at-rules 1`] = `
+Object {
+  "type": "pStylesheet",
+  "value": Array [
+    Object {
+      "name": "import",
+      "prelude": Array [
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tString",
+          "value": "my-styles.css",
+        },
+      ],
+      "type": "pAtRule",
+      "value": null,
+    },
+    Object {
+      "name": "import",
+      "prelude": Array [
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tString",
+          "value": "my-styles.css",
+        },
+      ],
+      "type": "pAtRule",
+      "value": null,
+    },
+  ],
+}
+`;
+
+exports[`parse a stylesheet two qualified rules 1`] = `
+Object {
+  "type": "pStylesheet",
+  "value": Array [
+    Object {
+      "prelude": Array [
+        Object {
+          "type": "tIdent",
+          "value": "p",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tDelim",
+          "value": ">",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "a",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+      ],
+      "type": "pQualifiedRule",
+      "value": Object {
+        "subtype": "{",
+        "type": "pBlock",
+        "value": Array [
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "color",
+          },
+          Object {
+            "type": "tColon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "blue",
+          },
+          Object {
+            "type": "tSemicolon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+        ],
+      },
+    },
+    Object {
+      "prelude": Array [
+        Object {
+          "type": "tIdent",
+          "value": "p",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tDelim",
+          "value": ">",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "a",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+      ],
+      "type": "pQualifiedRule",
+      "value": Object {
+        "subtype": "{",
+        "type": "pBlock",
+        "value": Array [
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "color",
+          },
+          Object {
+            "type": "tColon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "type": "tIdent",
+            "value": "blue",
+          },
+          Object {
+            "type": "tSemicolon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+        ],
+      },
+    },
+  ],
+}
+`;
+
+exports[`parse a stylesheet whitespace 1`] = `
+Object {
+  "type": "pStylesheet",
+  "value": Array [],
+}
+`;
