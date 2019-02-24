@@ -621,6 +621,172 @@ Array [
 ]
 `;
 
+exports[`parse a list of declarations declarations and an at-rule 1`] = `
+Array [
+  Object {
+    "important": false,
+    "name": "color",
+    "type": "pDeclaration",
+    "value": Array [
+      Object {
+        "type": "tIdent",
+        "value": "blue",
+      },
+    ],
+  },
+  Object {
+    "important": false,
+    "name": "background-image",
+    "type": "pDeclaration",
+    "value": Array [
+      Object {
+        "type": "tUrl",
+        "value": "https://example.com/background",
+      },
+    ],
+  },
+  Object {
+    "important": false,
+    "name": "content",
+    "type": "pDeclaration",
+    "value": Array [
+      Object {
+        "type": "tString",
+        "value": "some text",
+      },
+    ],
+  },
+  Object {
+    "important": false,
+    "name": "transform",
+    "type": "pDeclaration",
+    "value": Array [
+      Object {
+        "name": "translate",
+        "type": "pFunction",
+        "value": Array [
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "subtype": "integer",
+            "type": "tPercentage",
+            "value": 50,
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+        ],
+      },
+    ],
+  },
+  Object {
+    "name": "media",
+    "prelude": Array [
+      Object {
+        "type": "tWhitespace",
+      },
+      Object {
+        "subtype": "(",
+        "type": "pBlock",
+        "value": Array [
+          Object {
+            "type": "tIdent",
+            "value": "max-width",
+          },
+          Object {
+            "type": "tColon",
+          },
+          Object {
+            "type": "tWhitespace",
+          },
+          Object {
+            "subtype": "integer",
+            "type": "tDimension",
+            "unit": "px",
+            "value": 420,
+          },
+        ],
+      },
+      Object {
+        "type": "tWhitespace",
+      },
+    ],
+    "type": "pAtRule",
+    "value": Object {
+      "subtype": "{",
+      "type": "pBlock",
+      "value": Array [
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "content",
+        },
+        Object {
+          "type": "tColon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tString",
+          "value": "other text",
+        },
+        Object {
+          "type": "tSemicolon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "left",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "subtype": "integer",
+          "type": "tDimension",
+          "unit": "px",
+          "value": 42,
+        },
+        Object {
+          "type": "tSemicolon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "type": "tIdent",
+          "value": "right",
+        },
+        Object {
+          "type": "tColon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+        Object {
+          "subtype": "integer",
+          "type": "tDimension",
+          "unit": "px",
+          "value": 42,
+        },
+        Object {
+          "type": "tSemicolon",
+        },
+        Object {
+          "type": "tWhitespace",
+        },
+      ],
+    },
+  },
+]
+`;
+
 exports[`parse a list of declarations just a semicolon 1`] = `Array []`;
 
 exports[`parse a list of declarations multiple declarations 1`] = `
